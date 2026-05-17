@@ -7,7 +7,7 @@ It is a self-contained page so it does not require complex software, build steps
 
 ## Architecture and Main Philosophy
 
-This hub is engineered as a **zero-dependency, single-file application**.  
+This hub is created as a **zero-dependency, single-file application**.  
 
 * No installation required
 * Portable
