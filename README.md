@@ -78,5 +78,4 @@ Change these colour codes to update the look of the Hub:
 ``` 
 
 ## Credits
-☕ Made by @achlys-viii ☕  
-MIT Free-Use Framework License
+☕ Made by @achlys-viii ☕
