@@ -2,7 +2,7 @@
 
 A centralized operational hub and resource repository designed for team alignment, process clarity, and cross-functional execution.  
 
-It is a self-contained page—it does not require complex software, build steps, or developer environments to function.  
+It is a self-contained page so it does not require complex software, build steps, or developer environments to function.  
 
 
 ## Architecture and Main Philosophy
