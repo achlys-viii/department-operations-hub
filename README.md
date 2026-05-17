@@ -1,4 +1,5 @@
 # Department Operations Hub
+[View the Hub](https://achlys-viii.github.io/department-operations-hub/)  
 
 A centralized operational hub and resource repository designed for team alignment, process clarity, and cross-functional execution.  
 
