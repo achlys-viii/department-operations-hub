@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Operations Hub</title>
+
+    <style>
+        :root {
+            --bg-main: #161412;
+            --text-main: #faf6f0;
+            --text-muted: #b5ad9e;
+            --accent-color: #f08c7a;
+            --border-color: #36322e;
+            --font-stack: 'Optima', 'BlinkMacSystemFont', 'Segoe UI', 'Calibri', Roboto, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: var(--font-stack);
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6; 
+            padding: 4rem 2rem; 
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .basic-container { width: 100%; max-width: 1100px; }
+
+        header { 
+            margin-bottom: 2rem; 
+            border-bottom: 2px solid var(--text-main); 
+            padding-bottom: 2.5rem; 
+        }
+        header h1 { 
+            font-size: 2.2rem; 
+            font-weight: 500; 
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            line-height: 1.05;
+            margin-bottom: 1.25rem;
+        }
+        header p { 
+            color: var(--text-muted); 
+            font-size: 1.2rem; 
+            font-style: italic; 
+            font-family: 'Georgia', serif; 
+            max-width: 850px;
+            line-height: 1.4;
+        }
+
+        /* cards */
+        .onboarding-banner {
+            padding: 1.25rem 0; 
+            margin-bottom: 2.2rem;   
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+        .pillar-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+            gap: 2.2rem; 
+            margin-bottom: 6rem; 
+        }
+        
+        .pillar-card { 
+            background-color: transparent; 
+            border-top: 1px solid var(--border-color); 
+            padding: 1.25rem 0 0 0; 
+        }
+        
+        /* h2 alignments */
+        .pillar-card h2, .onboarding-banner h2 { 
+            color: var(--text-main); 
+            font-size: 1.15rem; 
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            line-height: 1;
+        }
+
+        .pillar-card h2 { 
+            margin-bottom: 1.5rem; 
+        }
+
+        /* link list */
+        .link-list { list-style: none; }
+        .link-list li { margin-bottom: 0.6rem; }
+        
+        .link-item { 
+            color: var(--text-muted); 
+            text-decoration: none;
+            display: inline-flex; 
+            align-items: center; 
+            font-size: 1.05rem;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .link-item:hover { 
+            color: var(--accent-color); 
+            transform: translateX(6px);
+        }
+
+        /* footer */
+        footer { 
+            margin-top: 8rem; 
+            padding-top: 2rem; 
+            border-top: 1px solid var(--border-color); 
+            color: var(--text-muted); 
+            font-size: 0.75rem; 
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            display: flex; 
+            justify-content: space-between; 
+        }
+
+        /* responsive */
+        @media (max-width: 768px) {
+            body { padding: 3rem 1.5rem; }
+            header h1 { font-size: 2rem; }
+            header p { font-size: 1rem; }
+            
+            .onboarding-banner {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1.25rem 0 0 0; 
+            }
+            .onboarding-banner h2 {
+                margin-bottom: 1.5rem;
+                line-height: 1.6;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic-container">
+        <header>
+            <h1>Department Operations Hub</h1>
+            <p>A centralized operational hub and resource repository designed for team alignment, process clarity, and cross-functional execution.</p>
+        </header>
+
+        <main>
+            <section class="onboarding-banner">
+                <h2>ONBOARDING</h2>
+                <ul class="link-list">
+                    <li><a href="#" class="link-item">Guide 1</a></li>
+                    <li><a href="#" class="link-item">Guide 2</a></li>
+                    <li><a href="#" class="link-item">Guide 3</a></li>
+                </ul>
+            </section>
+
+            <div class="pillar-grid">
+                <section class="pillar-card">
+                    <h2>01 GOVERNANCE</h2>
+                    <ul class="link-list">
+                        <li><a href="#" class="link-item">Link 1</a></li>
+                        <li><a href="#" class="link-item">Link 2</a></li>
+                        <li><a href="#" class="link-item">Link 3</a></li>
+                    </ul>
+                </section>
+
+                <section class="pillar-card">
+                    <h2>02 EXECUTION</h2>
+                    <ul class="link-list">
+                        <li><a href="#" class="link-item">Link 1</a></li>
+                        <li><a href="#" class="link-item">Link 2</a></li>
+                        <li><a href="#" class="link-item">Link 3</a></li>
+                    </ul>
+                </section>
+
+                <section class="pillar-card">
+                    <h2>03 SUPPORT</h2>
+                    <ul class="link-list">
+                        <li><a href="#" class="link-item">Link 1</a></li>
+                        <li><a href="#" class="link-item">Link 2</a></li>
+                        <li><a href="#" class="link-item">Link 3</a></li>
+                    </ul>
+                </section>
+
+                <section class="pillar-card">
+                    <h2>04 ASSETS</h2>
+                    <ul class="link-list">
+                        <li><a href="#" class="link-item">Link 1</a></li>
+                        <li><a href="#" class="link-item">Link 2</a></li>
+                        <li><a href="#" class="link-item">Link 3</a></li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <span>For Personal Use Only</span>
+            <span>May 2026 // @achlys-viii</span>
+        </footer>
+    </div>
+</body>
+</html>
